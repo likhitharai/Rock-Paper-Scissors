@@ -1,5 +1,8 @@
-let computerChoice = 'Hello';
+
+        
+        let computerChoice = 'Hello';
         let resultMsg = ''
+        function generateCompChoice(){
         let randomnumber = Math.random() *3;
         if (randomnumber>0 && randomnumber<1){
             computerChoice = 'Rock'
@@ -8,5 +11,6 @@ let computerChoice = 'Hello';
         } else {
             computerChoice = 'Scissors'
         }
+    }
 
 
