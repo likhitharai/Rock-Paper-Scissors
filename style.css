@@ -1,0 +1,51 @@
+body {
+  background-color: rgb(199, 169, 169);
+}
+
+.overall {
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.btn {
+  height: 100px;
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(188, 173, 230);
+  cursor: pointer;
+}
+
+#rock {
+  background-color: gray;
+}
+
+#paper {
+  background-color: beige;
+}
+
+#scissor {
+  background-color: rgb(175, 123, 123);
+}
+
+.text {
+  font-size: 30px;
+}
+
+#winner {
+  color: rgb(86, 36, 18);
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 180px;
+  font-size: 20px;
+}
