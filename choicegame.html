@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+
+    <div class="overall">
+        <div class="text">
+            <h1>Rock Paper Scissors game</h1>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="rock" onclick="
+            generateCompChoice();
+                if (computerChoice ==='Scissors') {
+                    resultMsg = 'The user has won ! Yayyyyyy!'
+                    
+                } else if (computerChoice === 'Paper'){
+                    resultMsg = 'The computer has won !'
+                }
+                else {
+                    resultMsg = 'Its a tie'
+                }
+                // let winnermsg = ;
+                document.querySelector('#choice').innerText = `The User has chosen Rock the computer has chosen ${computerChoice}.`;
+                document.querySelector('#winner').innerText = `${resultMsg}`
+                ">Rock</button>
+                
+            <button class="btn" id ="paper" onclick="
+            generateCompChoice();
+                if (computerChoice ==='Rock') {
+                    resultMsg = 'The user has won ! Yayyyyyy!'
+                    
+                } else if (computerChoice === 'scissor'){
+                    resultMsg = 'The computer has won !'
+                }
+                else {
+                    resultMsg = 'Its a tie'
+                }
+                // let winnermsg = ;
+                document.querySelector('#choice').innerText = `The User has chosen Paper the computer has chosen ${computerChoice}.`;
+                document.querySelector('#winner').innerText = `${resultMsg}`
+                ">Paper</button>
+                <button class="btn" id="scissor" onclick="
+                generateCompChoice();
+                    if (computerChoice ==='Paper') {
+                        resultMsg = 'The user has won ! Yayyyyyy!'
+                        
+                    } else if (computerChoice === 'Rock'){
+                        resultMsg = 'The computer has won !'
+                    }
+                    else {
+                        resultMsg = 'Its a tie'
+                    }
+                    // let winnermsg = ;
+                    document.querySelector('#choice').innerText = `The User has chosen Scissors and the computer has chosen ${computerChoice}.`;
+                    document.querySelector('#winner').innerText = `${resultMsg}`
+                ">Scissors</button>
+        </div>
+        <div class="winner">
+            <h1>Click on the button to play</h1>
+            <h2 id="choice">And......... </h2>
+            <h1 id="winner">the winner is.....</h1>
+        </div>
+
+        
+    </div>
+    <footer>
+        Made with ❤️ by Likhitha ©️2024
+      </footer>
+
+    <script src="index.js"></script>
+    
+</body>
+</html>
