@@ -13,4 +13,14 @@
         }
     }
 
-
+    let score = {
+        win :0,
+        tie:0,
+        lost : 0
+    }
+    function displayscores(){
+    document.querySelector('#wins').innerText = score.win;
+    document.querySelector('#lost').innerText = score.lost;
+    document.querySelector('#tie').innerText = score.tie;
+}
+    
